@@ -9,6 +9,7 @@
 }
 
 body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family: "cwTeXYen", "Noto Sans TC", "Josefin Sans", sans-serif !important;}
+body {font-size: 1.25rem;}
 
 
 /*** Spinner ***/
@@ -296,7 +297,7 @@ h5,h6,.fw-medium {
     animation: section-title-run-sm 5s infinite linear;
 }
 
-@-webkit-keyframes section-title-run {
+/*@-webkit-keyframes section-title-run {
     0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
 }
 
@@ -306,7 +307,7 @@ h5,h6,.fw-medium {
 
 @-webkit-keyframes section-title-run-sm {
     0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
-}
+}*/
 
 
 /*** Service ***/

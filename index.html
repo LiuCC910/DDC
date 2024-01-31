@@ -83,7 +83,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-3 animated slideInDown">－為專屬產業設計的服務－</h4>
                             <h2 class="display-1 text-white mb-md-4 animated zoomIn">連鎖餐飲業資源管理平台</h2>
-                            <a class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('servicesitem').value='a'">免費試用</a>
+                            <a class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('action').value='a'">免費試用</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-3 animated slideInDown">－更有效的跨門店資源管理－</h4>
                             <h2 class="display-1 text-white mb-md-4 animated zoomIn">連鎖總部數據智慧中心</h2>
-                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('servicesitem').value='e'">專人諮詢</a>
+                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('action').value='e'">專人諮詢</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-3 animated slideInDown">－銷售 進貨 人事 資源一站掌握－</h4>
                             <h2 class="display-1 text-white mb-md-4 animated zoomIn">跨系統跨平台串接服務</h2>
-                            <a class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('servicesitem').value='a'">試用申請</a>
+                            <a class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('action').value='a'">試用申請</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-3 animated slideInDown">－重點導入AI降低人力耗費－</h4>
                             <h2 class="display-1 text-white mb-md-4 animated zoomIn">智能對談式AI智能輔助</h2>
-                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('servicesitem').value='c'">了解更多</a>
+                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('action').value='c'">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@
                             <h5 class="mb-3"><i class="fas fa-arrow-right text-primary me-3"></i>餐飲專屬AI智能服務</h5>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s" href="#freeapply" onClick="document.getElementById('servicesitem').value='e'">聯繫專人進行諮詢</a>
+                    <a class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s" href="#freeapply" onClick="document.getElementById('action').value='e'">聯繫專人進行諮詢</a>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
@@ -397,7 +397,7 @@
                         <h3 class="text-white mb-3">了解更多功能細節</h3>
                         <p class="text-white mb-3">想了解更多服務與使用細節，歡迎您留下資訊等待專人提供您詳細資訊以及取得評估！</p>
                         <!--h2 class="text-white mb-0">+012 345 6789</h2-->
-                        <a class="btn btn-lg rounded text-white" style="margin-top:25px; border:1px solid #fff;" href="#freeapply" onClick="document.getElementById('servicesitem').value='e'">
+                        <a class="btn btn-lg rounded text-white" style="margin-top:25px; border:1px solid #fff;" href="#freeapply" onClick="document.getElementById('action').value='e'">
                             <i class="bi bi-arrow-right text-white"></i>
                             聯繫專人
                         </a>
@@ -522,10 +522,10 @@
                         <form id="google-form">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" id="companyname">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" id="cname">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" id="companyid">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" id="cid">
                                 </div>
                                 <div class="col-xl-12">
                                     <input type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height:55px;" id="email">
@@ -534,10 +534,10 @@
                                     <input type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height:55px;" id="name">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height:55px;" id="phoneno">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height:55px;" id="phone">
                                 </div>
                                 <div class="col-xl-12">
-                                    <select class="form-select bg-light border-0" style="height:55px;" id="servicesitem">
+                                    <select class="form-select bg-light border-0" style="height:55px;" id="action">
                                         <optgroup label="==============">
                                             <option selected disabled>*請選擇需要的服務</option>
                                           </optgroup>
@@ -555,7 +555,7 @@
                                     </select>
                                 </div>
                                 <div class="col-xl-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="留言給我們" id="message"></textarea>
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="留言給我們" id="other"></textarea>
                                 </div>
                                 <div class="col-xl-12">
                                     <button class="btn btn-dark w-100 py-3">送出申請</button>
@@ -609,50 +609,38 @@
           //在這裡我們要先擋掉form默認事件
           e.preventDefault();
     
-          if ($('#companyname').val() && $('#companyid').val() && $('#email').val() && $('#servicesitem').val()) {//需要先確認必填欄位是否填寫
+          if ($('#cname').val() && $('#cid').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
             $.ajax({
               // url為Google Form按下submit的aciotn
-              url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd4UhGbtpS6CCqKPNfbPatoP0W25COR6nyYVTmWm0jDbxJVZQ/formResponse",
+              url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctBkRuSHwM24D9Yx0pIG88YMr6tGE2W1iavV3G6ctD-934gg/formResponse",
               crossDomain: true,//解決跨網域CORS的問題
-              processData: true,
               data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
-                "entry.1507298489": $('#companyname').val(),
-                "entry.746509870": $('#companyid').val(),
-                "entry.1381754522": $('#email').val(),
-                "entry.1669981490": $('#name').val(),
-                "entry.21560228": $('#phoneno').val(),
-                "entry.357302731": $('#message').val(),
-                "entry.238349112": $('#servicesitem').val()
+                "entry.1456240837": $('#cname').val(),
+                "entry.1897627721": $('#cid').val(),
+                "entry.316377012": $('#name').val(),
+                "entry.1169347099": $('#email').val(),
+                "entry.719567082": $('#action').val(),
+                "entry.1511311365": $('#other').val(),
+                "entry.1939173014": $('#phone').val()
               },
               type: "POST", //因為是要進行insert的動作，故事用POST
               dataType: "JSONP",
               complete: function () {
                 //完成後把這些欄位清空
-                $('#companyname').val('')
-                $('#companyid').val('')
-                $('#email').val('')
+                $('#cname').val('')
+                $('#cid').val('')
                 $('#name').val('')
-                $('#phoneno').val('')
-                $('#message').val('')
-                $('#servicesitem').val('')
+                $('#email').val('')
+                $('#action').val('')
+                $('#other').val('')
+                $('#phone').val('')
                 //最後跳轉到感謝的頁面
-                window.location.replace("apply.html");
+                window.location.replace("thank.html");
               }
             });
           }
         });
     </script>
-    <!--div jsname="o6bZLc">
-        <input type="hidden" name="entry.746509870" value="16541333"> id="companyid"
-        <input type="hidden" name="entry.1507298489" value="測試用"> id="companyname"
-        <input type="hidden" name="entry.1381754522" value="liucc@hyweb.com.tw"> id="email"
-        <input type="hidden" name="entry.1669981490" value="劉佳淇"> id="name"
-        <input type="hidden" name="entry.21560228" value="0921013303"> id="phoneno"
-        <input type="hidden" name="entry.357302731" value="測試其他留言"> id="message"
-        <input type="hidden" name="entry.238349112" value="申請免費試用"> id="servicesitem"
-        <input type="hidden" name="dlut" value="1706256163253">
-        https://docs.google.com/forms/u/0/d/e/1FAIpQLSd4UhGbtpS6CCqKPNfbPatoP0W25COR6nyYVTmWm0jDbxJVZQ/formResponse
-    </div-->
 
 </body>
 

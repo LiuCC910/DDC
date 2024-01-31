@@ -522,13 +522,13 @@
                         <form id="google-form">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" id="cname">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" id="cname" required>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" id="cid">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" id="cid" required>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height:55px;" id="email">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height:55px;" id="email" required>
                                 </div>
                                 <div class="col-xl-12">
                                     <input type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height:55px;" id="name">
@@ -537,9 +537,9 @@
                                     <input type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height:55px;" id="phone">
                                 </div>
                                 <div class="col-xl-12">
-                                    <select class="form-select bg-light border-0" style="height:55px;" id="action">
+                                    <select class="form-select bg-light border-0" style="height:55px;" id="action" required>
                                         <optgroup label="==============">
-                                            <option selected disabled>*請選擇需要的服務</option>
+                                            <option disabled>*請選擇需要的服務</option>
                                           </optgroup>
                                           <optgroup label="申請試用">
                                             <option value="a">申請免費試用服務</option>
@@ -556,6 +556,14 @@
                                 </div>
                                 <div class="col-xl-12">
                                     <textarea class="form-control bg-light border-0" rows="3" placeholder="留言給我們" id="other"></textarea>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            我已閱讀並同意接受<a href="#" class="text-white">相關網站宣告與服務條款</a>
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="col-xl-12">
                                     <button class="btn btn-dark w-100 py-3">送出申請</button>
@@ -609,7 +617,7 @@
           //在這裡我們要先擋掉form默認事件
           e.preventDefault();
     
-          if ($('#cname').val() && $('#cid').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
+          if ($('#cname').val() && $('#cid').val() && $('#email').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
             $.ajax({
               // url為Google Form按下submit的aciotn
               url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctBkRuSHwM24D9Yx0pIG88YMr6tGE2W1iavV3G6ctD-934gg/formResponse",

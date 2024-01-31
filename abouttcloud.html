@@ -269,18 +269,18 @@
                                     <p class="text-white">選擇您想申請的方案，確實填寫資料後。管理員將於收到資訊後24小時內與您聯絡，確認試用與開通事宜（管理端保留對身分與資格的審核權利）。</p>
                                 </div>
                                 <div class="col-xl-12">
-                                    <select id="action" class="form-select bg-light border-0" style="height:55px;" disabled>
+                                    <select id="action" class="form-select bg-light border-0" style="height:55px;" disabled required>
                                         <option value="7">雲市集方案申請(專人聯繫)</option>
                                     </select>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input id="cname" type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;">
+                                    <input id="cname" type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" required>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input id="cid" type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;">
+                                    <input id="cid" type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" required>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input id="email" type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height: 55px;">
+                                    <input id="email" type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height: 55px;" required>
                                 </div>
                                 <div class="col-xl-12">
                                     <input id="name" type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height: 55px;">
@@ -290,8 +290,8 @@
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="form-check mb-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                        <input class="form-check-input" type="checkbox" value="" id="privacy" required>
+                                        <label class="form-check-label text-white" for="privacy">
                                             我已閱讀並同意接受<a href="#">相關網站宣告與服務條款</a>
                                         </label>
                                     </div>
@@ -340,6 +340,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/parsley.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -349,7 +350,7 @@
           //在這裡我們要先擋掉form默認事件
           e.preventDefault();
     
-          if ($('#cname').val() && $('#cid').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
+          if ($('#cname').val() && $('#cid').val() && $('#email').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
             $.ajax({
               // url為Google Form按下submit的aciotn
               url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctBkRuSHwM24D9Yx0pIG88YMr6tGE2W1iavV3G6ctD-934gg/formResponse",

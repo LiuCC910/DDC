@@ -263,35 +263,30 @@
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
                     <div class="input-group" style="max-width: 600px;">
-                        <form class="bg-light rounded" style="padding:3rem;background-color:rgba(255,255,255,0.5) !important;">
+                        <form id="google-form" class="bg-light rounded" style="padding:3rem;background-color:rgba(255,255,255,0.5) !important;">
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <p class="text-white">此處為雲市集補助方案申請專頁</p>
+                                    <p class="text-white">選擇您想申請的方案，確實填寫資料後。管理員將於收到資訊後24小時內與您聯絡，確認試用與開通事宜（管理端保留對身分與資格的審核權利）。</p>
                                 </div>
                                 <div class="col-xl-12">
-                                    <select class="form-select bg-light border-0" style="height:55px;" disabled id="action">
-                                        <option value="1">有意願成為合作會員</option>
-                                        <option value="2">申請加入創始會員</option>
-                                        <option value="3">標準方案 6 個月</option>
-                                        <option value="4">標準方案 12 個月</option>
-                                        <option value="5">標準方案 18 個月</option>
-                                        <option value="6" selected>雲市集方案申請(專人聯繫)</option>
+                                    <select id="action" class="form-select bg-light border-0" style="height:55px;" disabled>
+                                        <option value="7">雲市集方案申請(專人聯繫)</option>
                                     </select>
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height: 55px;">
+                                    <input id="cname" type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height: 55px;">
+                                    <input id="cid" type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height: 55px;">
+                                    <input id="email" type="email" class="form-control bg-light border-0" placeholder="*聯絡email(通過後，此email會做為登入帳號)" style="height: 55px;">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height: 55px;">
+                                    <input id="name" type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height: 55px;">
                                 </div>
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height: 55px;">
+                                    <input id="phone" type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height:55px;">
                                 </div>
                                 <div class="col-xl-12">
                                     <div class="form-check mb-2">
@@ -302,7 +297,7 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">送出申請</button>
+                                    <button class="btn btn-dark w-100 py-3">送出申請</button>
                                 </div>
                             </div>
                         </form>
@@ -348,6 +343,43 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        $('#google-form').submit(function (e) {
+          //在這裡我們要先擋掉form默認事件
+          e.preventDefault();
+    
+          if ($('#cname').val() && $('#cid').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
+            $.ajax({
+              // url為Google Form按下submit的aciotn
+              url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctBkRuSHwM24D9Yx0pIG88YMr6tGE2W1iavV3G6ctD-934gg/formResponse",
+              crossDomain: true,//解決跨網域CORS的問題
+              data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+                "entry.1456240837": $('#cname').val(),
+                "entry.1897627721": $('#cid').val(),
+                "entry.316377012": $('#name').val(),
+                "entry.1169347099": $('#email').val(),
+                "entry.719567082": $('#action').val(),
+                "entry.1939173014": $('#phone').val()
+              },
+              type: "POST", //因為是要進行insert的動作，故事用POST
+              dataType: "JSONP",
+              complete: function () {
+                //完成後把這些欄位清空
+                $('#cname').val('')
+                $('#cid').val('')
+                $('#name').val('')
+                $('#email').val('')
+                $('#action').val('')
+                $('#phone').val('')
+                //最後跳轉到感謝的頁面
+                window.location.replace("thank.html");
+              }
+            });
+          }
+        });
+    </script>
+
 </body>
 
 </html>

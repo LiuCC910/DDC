@@ -503,3 +503,9 @@ h5,h6,.fw-medium {
 }
 
 input:disabled, select:disabled {background-color:rgba(102, 102, 126, 0.3) !important;color:#ececec !important;}
+
+/*.container-fluid:nth-child(odd) {
+    background-image: url(../img/bg-hyweb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>慧探集－連鎖總部數據智慧中心</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="慧探集 WiseDataHub - 連鎖總部數據智慧中心" name="keywords">
+    <meta content="慧探集 WiseDataHub - 連鎖總部數據智慧中心" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-3">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0 logo"><img src="img/Logo_color.png"> 連鎖總部數據智慧中心</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                </div>
+                <a href="#freeapply" class="btn btn-danger py-2 px-4 ms-2 text-white">體驗轉變 ‧ 立即預約</a>
+            </div>
+        </nav>
+
+        <!-- Carousel Start 大圖輪播 -->
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-7.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-3 animated slideInDown">挖掘潛藏商機．找出賺錢關鍵．改善虧損問題，就從慧探集開始</h4>
+                            <h2 class="display-1 text-white mb-md-4 animated zoomIn">比你更懂你的數據！</h2>
+                            <a class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('action').value='e'">免費諮詢</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-9.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-3 animated slideInDown">告別繁瑣報表，數據自動彙整，讓您專注於獲利與成長</h4>
+                            <h2 class="display-1 text-white mb-md-4 animated zoomIn">智能經營超EASY！</h2>
+                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('action').value='e'">立即試用</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-5.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-3 animated slideInDown">數據自動匯集，趨勢精準掌握，助您快速應變市場變化</h4>
+                            <h2 class="display-1 text-white mb-md-4 animated zoomIn">集中資訊．即時決策</h2>
+                            <a class="btn btn-warning py-md-3 px-md-5 me-3 animated slideInLeft" href="#freeapply" onClick="document.getElementById('action').value='e'">了解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-3 animated slideInDown">從細微數據看見大商機，讓您的連鎖餐飲品牌持續擴張與領先</h4>
+                            <h2 class="display-1 text-white mb-md-4 animated zoomIn">慧眼洞悉，數據領航</h2>
+                            <a class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight" href="#freeapply" onClick="document.getElementById('action').value='e'">搶先行動</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+    <!-- Facts Start 三大特點 -->
+    <div class="container-fluid facts py-3 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-warning shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fas fa-database text-warning fa-lg"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-１">資源數據自動彙總</h5>
+                            <h1 class="mb-0">集中資訊<br>省錢省時省力</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-warning d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-chart-pie text-white fa-lg"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-warning mb-1">視覺化圖表分析</h5>
+                            <h1 class="mb-0">掌握趨勢<br>洞察市場脈動</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-warning shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-laptop-medical text-warning fa-lg"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="text-white mb-1">異常狀況主動提示</h5>
+                            <h1 class="mb-0">智能輔助<br>預防潛在問題</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+    <!-- About Start 痛點導入 -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-1 mb-3">
+                        <h5 class="fw-bold text-warning text-uppercase">你專屬的數據專家</h5>
+                        <h2 class="mb-0">分店一多，管理就亂？管理全靠經驗？報表總是慢半拍？</h1>
+                    </div>
+                    <p class="mb-4">告別混亂！ 「慧探集 WiseDataHub」整合分店營收、成本、庫存等數據，即時生成關鍵指標，助您掌握全局、發現異常、快速應變！</p>
+                    <div class="row g-0 mb-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-3"><i class="fa fa-question fa-xs me-3"></i>數據分散難整合：<br><span class="subtitle">各分店系統平台數據分散，難以彙整分析</span></h5>
+                            <h5 class="mb-3"><i class="fa fa-question fa-xs me-3"></i>報表製作耗時費力：<br><span class="subtitle">耗費人力且容易出錯，無法即時掌握狀況</span></h5>
+                            <h5 class="mb-3"><i class="fa fa-question fa-xs me-3"></i>決策缺乏數據支持：<br><span class="subtitle">無法精準分析、預測，難以制定有效的策略</span></h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h4 class="mb-3 text-danger"><i class="fas fa-arrow-right me-2"></i>數據整合與集中管理：<br><span class="subtitle">自動串接建立數據中心，告別數據孤島</span></h4>
+                            <h4 class="mb-3 text-danger"><i class="fas fa-arrow-right me-2"></i>即時報表儀表板：<br><span class="subtitle">視覺化營運儀表板，關鍵指標隨手掌握</span></h4>
+                            <h4 class="mb-3 text-danger"><i class="fas fa-arrow-right me-2"></i>智能分析與洞察：<br><span class="subtitle">分析預測評估到決策，主動輔助式支援</span></h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <p>針對產業痛點，我們提供專人諮詢服務。立即聯絡，為數位化邁出新的一步！</p>
+                    <a class="btn btn-warning py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s" href="#freeapply" onClick="document.getElementById('action').value='e'">專人免費系統諮詢</a>
+                </div>
+                <div class="col-lg-5" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features & Testimonial Start 特色與系統圖輪播 -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-3 mx-auto">
+                <h5 class="fw-bold text-warning text-uppercase">經營連鎖品牌不是比人力，更要善用系統化來提升營運能量。</h5>
+                <h1 class="mb-0">品牌要成功，控場比開店更重要！</h1>
+                <p>連鎖品牌要成功，控場比開店更重要！<br>
+                    想有效地經營連鎖品牌，真正的挑戰不只是「開店」，更重要的是能持續「控場」。靠人力製做報表？靠經驗判斷狀況？那都是過去的作法了。</p>
+            </div>
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
+                            <div class="bg-warning rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cubes fa-lg text-white"></i>
+                            </div>
+                            <h4>資訊匯集．數據自動集中</h4>
+                            <p class="mb-0">分店營收、進貨成本、人事支出等數據自動彙整作業，降低人力整理之錯誤與時間浪費。</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
+                            <div class="bg-warning rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-chart-pie fa-lg text-white"></i>
+                            </div>
+                            <h4>決策支持．智能分析輔助</h4>
+                            <p class="mb-0">系統即時生成視覺化圖表、交叉分析報表，輕鬆比較分店表現，洞察經營趨勢。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature-2.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
+                            <div class="bg-warning rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-users-cog fa-lg text-white"></i>
+                            </div>
+                            <h4>營運調整．問題即刻修正</h4>
+                            <p class="mb-0">毛利偏低？成本異常？快速找出根本原因，即時調整採購、菜單、人力配置與促銷策略。</p>
+                        </div>
+                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
+                            <div class="bg-warning rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fas fa-lg fa-bullhorn text-white"></i>
+                            </div>
+                            <h4>異常提醒．落實管理與經營</h4>
+                            <p class="mb-0">突增成本、營收驟減！？系統自動偵測異常狀況，即時通知決策者，問題不拖延。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--div class="col-lg-12 text-center">
+                    <a href="assessment.html" class="btn btn-warning py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">線上自我評估</a>
+                </div-->
+            </div>
+            
+            <!--系統截圖-->
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Admin-IncomeStatement.jpg">
+                    </div>
+                    <div class="pt-4 ps-2 text-center">
+                        <h4 class="text-warning mb-1">損益監控表</h4>
+                        <h5 class="mb-3">一目瞭然門店營運，精準掌握獲利金鑰</h5>
+                    </div>
+                    <p class="pb-3 px-4">
+                        即時呈現每間分店的營收、成本與利潤，助您輕鬆找出『金雞母』，更精確地揪出『虧損黑洞』，讓每一步決策都有數據支撐
+                    </p>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Admin-DashboardNew.jpg">
+                    </div>
+                    <div class="pt-4 ps-2 text-center">
+                        <h4 class="text-warning mb-1">門店儀錶板</h4>
+                        <h5 class="mb-3">精準目標管理，營運績效盡在掌握</h5>
+                    </div>
+                    <p class="pb-3 px-4">
+                        滿足您日／週／月的多元目標導向，快速評估各分店經營效益，即時發現並調整策略，確保每個階段的營運目標都能達成
+                    </p>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Admin-Statistics.jpg">
+                    </div>
+                    <div class="pt-4 ps-2 text-center">
+                        <h4 class="text-warning mb-1">視覺化圖表</h4>
+                        <h5 class="mb-3">深度數據洞察，發掘營運成長潛力</h5>
+                    </div>
+                    <p class="pb-3 px-4">
+                        全面分析不同區域的消費力、客群偏好及成本支出趨勢，助您精準調整菜單組合與行銷策略，搶佔市場先機
+                    </p>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Admin-Chatbot.jpg">
+                    </div>
+                    <div class="pt-4 ps-2 text-center">
+                        <h4 class="text-warning mb-1">AI智能輔助</h4>
+                        <h5 class="mb-3">AI智慧賦能，專屬的經營智囊</h5>
+                    </div>
+                    <p class="pb-3 px-4">
+                        提供智能趨勢分析、精準進貨建議，更整合企業知識庫，讓您隨時隨地擁有專屬的決策顧問，提升管理效率與應變能力
+                    </p>
+                </div>
+                <div class="testimonial-item bg-light my-4">
+                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                        <img class="img-fluid rounded" src="img/Admin-Notification.jpg">
+                    </div>
+                    <div class="pt-4 ps-2 text-center">
+                        <h4 class="text-warning mb-1">主動提示通知</h4>
+                        <h5 class="mb-3">數據異常即時預警，風險控管先人一步</h5>
+                    </div>
+                    <p class="pb-3 px-4">
+                        系統自動監控關鍵營運指標，一旦偵測到異常狀況即刻發出警報，化被動為主動，即時應變，將潛在損失降至最低
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!--客戶實例回饋-->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-3 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-danger text-uppercase">★★★★★</h5>
+                <h1 class="mb-0">客戶好評</h1>
+            </div>
+            <div class="row g-5">
+                <div class="testimonial-item text-center wow zoomIn">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/team-1.jpg" alt="客戶好評" style="width:150px;">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-warning"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4">過去，我們用人工彙整、透過Excel來管理與彙整每月的營業報表。<br>
+                            <span class="text-danger">自從導入『慧探集』後，我們<b>省下大量製作報表的時間，更能專注在營運策略上！</b>現在可隨時用系統來看營運走勢，省時又精準，每週例會都靠它！</span></p>
+                            <hr class="w-25 mx-auto">
+                            <h5>－麻辣天后－</h5>
+                            <span>鷹展總經理</span>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Service Start 服務特色 -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-3 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-warning text-uppercase">滿足連鎖餐飲總部跨系統數據決策需求</h5>
+                <h1 class="mb-0">服務特色</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-lg fa-laptop-code text-white"></i>
+                        </div>
+                        <h4 class="mb-3">服務免費更新</h4>
+                        <p class="m-0">雲端解決方案不受限安裝與使用環境，訂閱期永遠同步享受最新版本的功能與服務</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-pie text-white fa-lg"></i>
+                        </div>
+                        <h4 class="mb-3">全視覺化圖表分析</h4>
+                        <p class="m-0">從損益、銷售到成本，提供更直覺的圖表分析資源，滿足產業的關鍵營運指標監控</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white fa-lg"></i>
+                        </div>
+                        <h4 class="mb-3">無需額外開發</h4>
+                        <p class="m-0">不需額外客製化開發，只為您專注於經營所需數據的串接與分析</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-lg fa-lightbulb text-white"></i>
+                        </div>
+                        <h4 class="mb-3">智能輔助模組</h4>
+                        <p class="m-0">導入AI工具，將重複性的作業活動系統化，有效降低人力成本、降低人為犯錯</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white fa-lg"></i>
+                        </div>
+                        <h4 class="mb-3">完善資安防護</h4>
+                        <p class="m-0">完善的多層次防護設計，加強化雲端式運算環境安全，確實防範網路資安潛在威脅</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="position-relative bg-warning rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">了解更多</h3>
+                        <p class="text-white mb-3">服務更多使用細節，歡迎您留下資訊等待專人為您免費諮詢評估！</p>
+                        <!--h2 class="text-white mb-0">+012 345 6789</h2-->
+                        <a class="btn btn-lg rounded text-white" style="margin-top:25px; border:1px solid #fff;" href="#freeapply" onClick="document.getElementById('action').value='e'">
+                            <i class="bi bi-arrow-right text-white"></i>
+                            聯繫專人
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Quote Start 關於凌網與聯絡表單 -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s" id="freeapply">
+    <a name="freeapply"></a>
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="section-title position-relative pb-3 mb-5">
+                        <h5 class="fw-bold text-warning text-uppercase">告別盲點，精準決策，就從慧探集開始！</h5>
+                        <h2 class="mb-0">對我們的服務有興趣嗎<br/>現在立即聯絡，將有專人提供您諮詢與協助</h2>
+                    </div>
+                    <p class="pb-3 mb-2">凌網科技成立於1998年7月，並於2003年3月上櫃，致力於電子化政府、圖書教育、電子支付相關軟體技術之研發及服務，擁有堅強技術研發陣容，在國內外的應用軟體及整合性系統服務方面具備相當競爭優勢，絕對是您值得信賴的合作夥伴！</p>
+                    <h4 class="pb-3 mb-2">若有任何其他需求，也歡迎您來電洽詢！</h4>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                        <div class="bg-danger d-flex align-items-center justify-content-center rounded" style="width:45px; height:45px;">
+                            <i class="fa fa-phone-alt text-white fa-lg"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h4 class="text-danger mb-0">02-2395-6966</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-warning rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form id="google-form">
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業名稱" style="height:55px;" id="cname" required>
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="*企業統一編號" style="height:55px;" id="cid" required>
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="*聯絡email" style="height:55px;" id="email" required>
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡人姓名" style="height:55px;" id="name">
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="聯絡電話" style="height:55px;" id="phone">
+                                </div>
+                                <div class="col-xl-12" style="display: none;">
+                                    <select class="form-select bg-light border-0" style="height:55px;" id="action" required>
+                                        <option disabled>*請選擇需要的服務</option>
+                                        <option value="e" selected>聯繫專人洽詢(請留下聯絡電話)</option>
+                                        <option value="b">有意願成為合作／創始會員</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="留言給我們" id="other"></textarea>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required checked>
+                                        <label class="form-check-label text-white" for="flexCheckChecked">
+                                            同意接受透過電話或email進行聯繫
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <button class="btn btn-danger w-100 py-3 text-white">送出</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-white" style="background:#061429; font-size: 0.9rem;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-12 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; 2024 
+                            <a class="text-white border-bottom" href="https://www.hyweb.com.tw/">Hyweb Technology Inc.</a>. All Rights Reserved. 
+                            <br/>
+                            <!--/***This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            <span style="color:#061429;font-size: 10px;">Designed by <a style="color:#061429" href="https://htmlcodex.com">HTML Codex</a></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-warning btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $('#google-form').submit(function (e) {
+          //在這裡我們要先擋掉form默認事件
+          e.preventDefault();
+    
+          if ($('#cname').val() && $('#cid').val() && $('#email').val() && $('#action').val()) {//需要先確認必填欄位是否填寫
+            $.ajax({
+              // url為Google Form按下submit的aciotn
+              url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSctBkRuSHwM24D9Yx0pIG88YMr6tGE2W1iavV3G6ctD-934gg/formResponse",
+              crossDomain: true,//解決跨網域CORS的問題
+              data: {// entry.xxxxx 這些需要填寫您表單裡面的值，與其相互對應
+                "entry.1456240837": $('#cname').val(),
+                "entry.1897627721": $('#cid').val(),
+                "entry.316377012": $('#name').val(),
+                "entry.1169347099": $('#email').val(),
+                "entry.719567082": $('#action').val(),
+                "entry.1511311365": $('#other').val(),
+                "entry.1939173014": $('#phone').val()
+              },
+              type: "POST", //因為是要進行insert的動作，故事用POST
+              dataType: "JSONP",
+              complete: function () {
+                //完成後把這些欄位清空
+                $('#cname').val('')
+                $('#cid').val('')
+                $('#name').val('')
+                $('#email').val('')
+                $('#action').val('')
+                $('#other').val('')
+                $('#phone').val('')
+                //最後跳轉到感謝的頁面
+                window.location.replace("thank.html");
+              }
+            });
+          }
+        });
+    </script>
+
+</body>
+
+</html>

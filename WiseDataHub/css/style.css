@@ -509,7 +509,7 @@ input:disabled, select:disabled {background-color:rgba(102, 102, 126, 0.3) !impo
 .subtitle {font-size:85%;font-weight:normal;opacity:0.75;padding-left:1.5em;}
 .bg-light {background-color: #ffffee !important;}
 
-@media (min-width:1009.99px) {
+@media (max-width: 1030.99px) and (min-width: 999.99px) {
     h1 {font-size:calc(1.275rem + 1vw) !important;}
     h4 {font-size:calc(1.225rem + .1vw)}
     h5 {font-size: 1.15rem;}

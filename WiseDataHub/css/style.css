@@ -506,9 +506,13 @@ h5,h6,.fw-medium {
 input:disabled, select:disabled {background-color:rgba(102, 102, 126, 0.3) !important;color:#ececec !important;}
 
 .form-check-input:checked {background-color: #dc3545; border-color: #dc3545;}
-.subtitle {font-size:85%;font-weight: normal;opacity:0.75;padding-left: 1.5em;}
+.subtitle {font-size:85%;font-weight:normal;opacity:0.75;padding-left:1.5em;}
 .bg-light {background-color: #ffffee !important;}
 
-@media (max-width:991.98px) {
-    
+@media (min-width:1009.99px) {
+    h1 {font-size:calc(1.275rem + 1vw) !important;}
+    h4 {font-size:calc(1.225rem + .1vw)}
+    h5 {font-size: 1.15rem;}
+    .subtitle {font-size:75%;padding-left:0;}
+    .testimonial-item {min-height:495px;}
 }

@@ -516,3 +516,8 @@ input:disabled, select:disabled {background-color:rgba(102, 102, 126, 0.3) !impo
     .subtitle {font-size:75%;padding-left:0;}
     .testimonial-item {min-height:495px;}
 }
+
+@media (max-width:640px) {
+    .carousel-caption h4 {display:none;}
+    div.navbar-nav.ms-auto.py-0 {height:10px !important;}
+}

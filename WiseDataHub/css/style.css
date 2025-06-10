@@ -86,13 +86,14 @@ h5,h6,.fw-medium {
 
 .btn-warning
 .btn-secondary {
-    color: #FFFFFF;
     background-color: #F1A900;
     box-shadow: inset 0 0 0 50px transparent;
 }
 
 .btn-warning:hover {
-    box-shadow: inset 0 0 0 0 var(--warning);
+    color: #FFFFFF;
+    background-color: #db9e0e;
+    box-shadow: inset 0 0 0 0 var(--secondary);
 }
 
 .btn-secondary:hover {
